@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Google Document Editable
+    </title>
+</head>
+
+<body>
+
+    <div id="toolbar">
+
+
+        <button onclick="execCmd('bold')">Bold</button>
+        <button onclick="execCmd('italic')">Italic</button>
+        <button onclick="execCmd('underline')">Underline</button>
+        <button onclick="execCmd('strikeThrough')">StrikeThrough</button>
+        <button onclick="execCmd('justifyCenter')">Center</button>
+        <button onclick="execCmd('unlink')">Unlink</button>
+        <button onclick="execCmd('createLink', prompt('Enter the image url:', 'http://'))">Link</button>
+        <button
+            onclick="execCmd=(execCmd('insertImage', prompt('Enter the Image URL:', 'http://')))">insertImage</button>
+
+
+
+    </div>
+    <div id="editor" contenteditable="true"></div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
